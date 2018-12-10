@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="3.1" jmeter="4.0 r1823414">
   <hashTree>
-    <TestPlan guiclass=" " testname="Simple Test Plan" enabled="true">
+    <TestPlan guiclass=" " testname="simpleProject_generated.jmx" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
@@ -18,28 +18,28 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <intProp name="LoopController.loops">1</intProp>
         </elementProp>
-        <longProp name="ThreadGroup.duration">14400</longProp>
+        <longProp name="ThreadGroup.duration">86400</longProp>
       </SetupThreadGroup>
       <hashTree>
-        <DurationAssertion testname="AND response time should be lower than 5000 miliseconds">
-          <longProp name="DurationAssertion.duration">5000</longProp>
-        </DurationAssertion>
-        <hashTree/>
         <ResponseAssertion testname="THEN a positive answer should return">
           <collectionProp name="Asserion.test_strings"/>
           <boolProp name="Assertion.assume_success">true</boolProp>
         </ResponseAssertion>
+        <hashTree/>
+        <DurationAssertion testname="AND response time should beless than 1000 miliseconds">
+          <longProp name="DurationAssertion.duration">1000</longProp>
+        </DurationAssertion>
         <hashTree/>
         <LoopController guiclass=" ">
           <boolProp reference="../../../SetupThreadGroup/elementProp/boolProp"/>
           <intProp reference="../../../SetupThreadGroup/elementProp/intProp"/>
         </LoopController>
         <hashTree>
-          <HTTPSampler__ guiclass=" " testname="iste.uni-stuttgart.de/rss/ GET /">
+          <HTTPSampler__ guiclass=" " testname="www.google.com GET /">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">iste.uni-stuttgart.de/rss/</stringProp>
+            <stringProp name="HTTPSampler.domain">www.google.com</stringProp>
             <intProp name="HTTPSampler.port">80</intProp>
             <stringProp name="HTTPSampler.path">/</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>

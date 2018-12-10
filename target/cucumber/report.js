@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 800426,
+  "duration": 994190085,
   "status": "passed"
 });
 formatter.scenario({
@@ -25,7 +25,7 @@ formatter.step({
 });
 formatter.step({
   "line": 5,
-  "name": "\"run\" the experiment for 4 \"hours\"",
+  "name": "\"run\" the experiment for 24 \"hours\"",
   "keyword": "Then "
 });
 formatter.step({
@@ -35,14 +35,14 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "\"ensure\" a \"response time\" is \"less\" than 5000 \"miliseconds\"",
+  "name": "\"ensure\" a \"response time\" is \"less\" than 1000 \"miliseconds\"",
   "keyword": "And "
 });
 formatter.match({
   "location": "WebServiceStepDefinition.the_next_beginning_of_Summer_Term()"
 });
 formatter.result({
-  "duration": 286866529,
+  "duration": 115190089,
   "status": "passed"
 });
 formatter.match({
@@ -52,18 +52,18 @@ formatter.match({
       "offset": 1
     },
     {
-      "val": "4",
+      "val": "24",
       "offset": 25
     },
     {
       "val": "hours",
-      "offset": 28
+      "offset": 29
     }
   ],
   "location": "WebServiceStepDefinition.the_experiment_for(String,int,String)"
 });
 formatter.result({
-  "duration": 6056955,
+  "duration": 2906451,
   "status": "passed"
 });
 formatter.match({
@@ -80,7 +80,7 @@ formatter.match({
   "location": "WebServiceStepDefinition.a_should_return(String,String)"
 });
 formatter.result({
-  "duration": 93440,
+  "duration": 3639036,
   "status": "passed"
 });
 formatter.match({
@@ -98,7 +98,7 @@ formatter.match({
       "offset": 31
     },
     {
-      "val": "5000",
+      "val": "1000",
       "offset": 42
     },
     {
@@ -109,11 +109,11 @@ formatter.match({
   "location": "WebServiceStepDefinition.a_is_than(String,String,String,int,String)"
 });
 formatter.result({
-  "duration": 380160,
+  "duration": 1134933,
   "status": "passed"
 });
 formatter.after({
-  "duration": 312747,
+  "duration": 285105677,
   "status": "passed"
 });
 });
