@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 770560,
+  "duration": 800426,
   "status": "passed"
 });
 formatter.scenario({
@@ -42,12 +42,29 @@ formatter.match({
   "location": "WebServiceStepDefinition.the_next_beginning_of_Summer_Term()"
 });
 formatter.result({
-  "duration": 475601514,
+  "duration": 286866529,
   "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "run",
+      "offset": 1
+    },
+    {
+      "val": "4",
+      "offset": 25
+    },
+    {
+      "val": "hours",
+      "offset": 28
+    }
+  ],
+  "location": "WebServiceStepDefinition.the_experiment_for(String,int,String)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 6056955,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -63,14 +80,40 @@ formatter.match({
   "location": "WebServiceStepDefinition.a_should_return(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 93440,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "ensure",
+      "offset": 1
+    },
+    {
+      "val": "response time",
+      "offset": 12
+    },
+    {
+      "val": "less",
+      "offset": 31
+    },
+    {
+      "val": "5000",
+      "offset": 42
+    },
+    {
+      "val": "miliseconds",
+      "offset": 48
+    }
+  ],
+  "location": "WebServiceStepDefinition.a_is_than(String,String,String,int,String)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 380160,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 69974,
+  "duration": 312747,
   "status": "passed"
 });
 });
